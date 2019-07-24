@@ -1,13 +1,23 @@
 import java.util.Scanner;
 
 public class DisplayYourMessage {
+
+    Scanner scanner = new Scanner(System.in);
+
     public void displayMessage() {
 
         System.out.println("What message do You want to sent?");
-        Scanner messageToDisplay = new Scanner(System.in);
-        String msg = messageToDisplay.next();
+        String msg = scanner.next();
 
         System.out.println(msg);
+
+    }
+
+    public void enterName(String name, Integer age) {
+
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age + " old!");
+
 
     }
 }
