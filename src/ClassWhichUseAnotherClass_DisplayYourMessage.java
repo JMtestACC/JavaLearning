@@ -16,5 +16,11 @@ public class ClassWhichUseAnotherClass_DisplayYourMessage {
 
         message.enterName(name, age);
 
+        justPrintSomeText();
+
+    }
+
+    public static void justPrintSomeText() {
+        System.out.println("This is message from second method under the same class");
     }
 }
