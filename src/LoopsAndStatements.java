@@ -4,17 +4,25 @@ public class LoopsAndStatements {
 
     public static void main(String[] args) {
 
+        int finalGrade = 5;
+
         ifStatement();
         switchStatement();
         whileLoop();
 
+        System.out.println(finalGrade >= 4 ? "Good job" : "You could better");
+
     }
 
     public static void ifStatement() {
-        int grade = 5;
+        int grade = 6;
 
         if(grade >= 2 && grade < 7) {
-            System.out.println("You've passed");
+            if(grade == 6) {
+                System.out.println("Excellent grade !!!");
+            } else {
+                System.out.println("You've passed");
+            }
         } else if(grade < 2 && grade > 0) {
             System.out.println("You are failed. Need write test again.");
         } else {
