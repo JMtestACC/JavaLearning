@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
 public class LoopsAndStatements {
+
     public static void main(String[] args) {
 
         ifStatement();
         switchStatement();
+        whileLoop();
 
     }
 
@@ -39,5 +41,24 @@ public class LoopsAndStatements {
                 break;
         }
 
+    }
+
+    public static void whileLoop() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        String word;
+        int timesToRepeat;
+        int counter = 0;
+
+        System.out.println("What word do You like to print?");
+        word = scanner.next();
+        System.out.println("How many times You want to repeat word: " + word + " ?");
+        timesToRepeat = scanner.nextInt();
+
+        while(counter < timesToRepeat) {
+            System.out.println(word);
+            counter ++;
+        }
     }
 }
