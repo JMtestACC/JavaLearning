@@ -14,7 +14,7 @@ public class ClassWhichUseAnotherClass_DisplayYourMessage {
         System.out.println("What's your age?");
         Integer age = scanner.nextInt();
 
-        message.enterName(name, age);
+        message.enterNamAndAge(name, age);
 
         justPrintSomeText();
 
