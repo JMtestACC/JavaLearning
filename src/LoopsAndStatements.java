@@ -9,6 +9,8 @@ public class LoopsAndStatements {
         ifStatement();
         switchStatement();
         whileLoop();
+        forLoop();
+        doWhileLoop();
 
         System.out.println(finalGrade >= 4 ? "Good job" : "You could better");
 
@@ -68,5 +70,33 @@ public class LoopsAndStatements {
             System.out.println(word);
             counter ++;
         }
+    }
+
+    public static void forLoop() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        String word;
+        int timesToRepeat;
+
+        System.out.println("forLoop() method do the same as whileLoop()");
+        System.out.println("What word do You like to print?");
+        word = scanner.next();
+        System.out.println("How many times You want to repeat word: " + word + " ?");
+        timesToRepeat = scanner.nextInt();
+
+        for(int i = 0; i < timesToRepeat; i++) {
+            System.out.println(word);
+        }
+    }
+
+    public static void doWhileLoop() {
+
+        int years = 30;
+
+        do {
+            System.out.println("This is do-while loop, so loop will be executed at least ONCE !!!! \n oh.. I forgot I'm " + years + " years old");
+            years ++;
+        } while (years < 25);
     }
 }
